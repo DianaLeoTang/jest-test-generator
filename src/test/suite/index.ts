@@ -1,10 +1,7 @@
-/*
- * @Author: Diana Tang
- * @Date: 2025-03-10 14:09:23
- * @LastEditors: Diana Tang
- * @Description: some description
- * @FilePath: /jest-test-generator/src/test/suite/index.ts
- */
+import * as path from 'path';
+import Mocha from 'mocha';
+import glob from 'glob';
+
 export function run(): Promise<void> {
   // Create the mocha test
   const mocha = new Mocha({
